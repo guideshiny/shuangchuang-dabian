@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #0b1020;
+  --color-canvas-top: #111a3a;
+  --color-surface-card: rgba(15, 20, 40, 0.6);
+  --color-surface-card-solid: #0f1428;
+  --color-surface-elevated: #1e2a45;
+  --color-surface-input: rgba(30, 42, 69, 0.6);
+  --color-border-default: #1e293b;
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #64748b;
+  
+  --color-primary: #6366f1;
+  --color-primary-hover: #818cf8;
+  --color-primary-muted: rgba(99, 102, 241, 0.15);
+  --color-primary-border: rgba(99, 102, 241, 0.30);
+  
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-error: #fb7185;
+  --color-info: #38bdf8;
+}
+
+body {
+  background: radial-gradient(ellipse at top, var(--color-canvas-top) 0%, var(--color-canvas) 55%);
+  background-attachment: fixed;
+  color: var(--color-text-primary);
+  font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+  min-height: 100vh;
+}
+
+.font-timer {
+  font-family: ui-monospace, "JetBrains Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbar for dark mode */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 41, 59, 0.8);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(71, 85, 105, 0.8);
+}

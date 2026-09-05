@@ -1,0 +1,8 @@
+{
+  "name": "Remix 双创赛事模拟答辩",
+  "description": "双创赛事模拟答辩模块设计",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
